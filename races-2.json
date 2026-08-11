@@ -1,0 +1,488 @@
+[
+  {
+    "id": 201,
+    "stage_id": "wc-2026-002",
+    "date": "2025-12-12T11:25:00",
+    "discipline": "Sprint",
+    "gender": "Men",
+    "distance": "10 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 202,
+    "stage_id": "wc-2026-002",
+    "date": "2025-12-12T14:15:00",
+    "discipline": "Sprint",
+    "gender": "Women",
+    "distance": "7,5 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 203,
+    "stage_id": "wc-2026-002",
+    "date": "2025-12-13T12:00:00",
+    "discipline": "Pursuit",
+    "gender": "Men",
+    "distance": "12.5 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 204,
+    "stage_id": "wc-2026-002",
+    "date": "2025-12-13T14:15:00",
+    "discipline": "Relay",
+    "gender": "Women",
+    "distance": "4x6 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 205,
+    "stage_id": "wc-2026-002",
+    "date": "2025-12-14T12:00:00",
+    "discipline": "Relay",
+    "gender": "Men",
+    "distance": "4x7.5 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 206,
+    "stage_id": "wc-2026-002",
+    "date": "2025-12-14T14:45:00",
+    "discipline": "Pursuit",
+    "gender": "Women",
+    "distance": "10 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 301,
+    "stage_id": "wc-2026-003",
+    "date": "2025-12-18T14:15:00",
+    "discipline": "Sprint",
+    "gender": "Women",
+    "distance": "7.5 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 302,
+    "stage_id": "wc-2026-003",
+    "date": "2025-12-19T14:15:00",
+    "discipline": "Sprint",
+    "gender": "Men",
+    "distance": "10 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 303,
+    "stage_id": "wc-2026-003",
+    "date": "2025-12-20T12:15:00",
+    "discipline": "Pursuit",
+    "gender": "Women",
+    "distance": "10 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 304,
+    "stage_id": "wc-2026-003",
+    "date": "2025-12-20T14:45:00",
+    "discipline": "Pursuit",
+    "gender": "Men",
+    "distance": "12.5 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 305,
+    "stage_id": "wc-2026-003",
+    "date": "2025-12-21T12:15:00",
+    "discipline": "Mass-start",
+    "gender": "Women",
+    "distance": "12.5 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 306,
+    "stage_id": "wc-2026-003",
+    "date": "2025-12-21T14:45:00",
+    "discipline": "Mass-start",
+    "gender": "Men",
+    "distance": "15 km",
+    "status": "finished",
+    "results": []
+  },
+
+  {
+    "id": 401,
+    "stage_id": "wc-2026-004",
+    "date": "2026-01-08T11:30:00",
+    "discipline": "Sprint",
+    "gender": "Men",
+    "distance": "10 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 402,
+    "stage_id": "wc-2026-004",
+    "date": "2026-01-08T14:15:00",
+    "discipline": "Sprint",
+    "gender": "Women",
+    "distance": "7.5 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 403,
+    "stage_id": "wc-2026-004",
+    "date": "2026-01-10T12:00:00",
+    "discipline": "Pursuit",
+    "gender": "Men",
+    "distance": "12.5 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 404,
+    "stage_id": "wc-2026-004",
+    "date": "2026-01-10T14:25:00",
+    "discipline": "Relay",
+    "gender": "Women",
+    "distance": "4x6 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 405,
+    "stage_id": "wc-2026-004",
+    "date": "2026-01-11T11:00:00",
+    "discipline": "Relay",
+    "gender": "Men",
+    "distance": "4x7.5 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 406,
+    "stage_id": "wc-2026-004",
+    "date": "2026-01-11T14:30:00",
+    "discipline": "Pursuit",
+    "gender": "Women",
+    "distance": "10 km",
+    "status": "finished",
+    "results": []
+  },
+
+  {
+    "id": 501,
+    "stage_id": "wc-2026-005",
+    "date": "2026-01-14T14:30:00",
+    "discipline": "Relay",
+    "gender": "Women",
+    "distance": "4x6 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 502,
+    "stage_id": "wc-2026-005",
+    "date": "2026-01-15T14:30:00",
+    "discipline": "Relay",
+    "gender": "Men",
+    "distance": "4x7.5 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 503,
+    "stage_id": "wc-2026-005",
+    "date": "2026-01-16T14:30:00",
+    "discipline": "Sprint",
+    "gender": "Women",
+    "distance": "7.5 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 504,
+    "stage_id": "wc-2026-005",
+    "date": "2026-01-17T14:30:00",
+    "discipline": "Sprint",
+    "gender": "Men",
+    "distance": "10 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 505,
+    "stage_id": "wc-2026-005",
+    "date": "2026-01-18T12:30:00",
+    "discipline": "Pursuit",
+    "gender": "Women",
+    "distance": "10 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 506,
+    "stage_id": "wc-2026-005",
+    "date": "2026-01-18T15:00:00",
+    "discipline": "Pursuit",
+    "gender": "Men",
+    "distance": "12.5 km",
+    "status": "finished",
+    "results": []
+  },
+
+  {
+    "id": 601,
+    "stage_id": "wc-2026-006",
+    "date": "2026-01-22T18:15:00",
+    "discipline": "Short Individual",
+    "gender": "Men",
+    "distance": "15 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 602,
+    "stage_id": "wc-2026-006",
+    "date": "2026-01-22T18:15:00",
+    "discipline": "Short Individual",
+    "gender": "Women",
+    "distance": "12.5 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 603,
+    "stage_id": "wc-2026-006",
+    "date": "2026-01-24T13:15:00",
+    "discipline": "Single Mixed Relay",
+    "gender": "Men & Women",
+    "distance": "",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 604,
+    "stage_id": "wc-2026-006",
+    "date": "2026-01-24T15:10:00",
+    "discipline": "Mixed Relay",
+    "gender": "Men & Women",
+    "distance": "",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 605,
+    "stage_id": "wc-2026-006",
+    "date": "2026-01-25T15:15:00",
+    "discipline": "Mass-start",
+    "gender": "Men",
+    "distance": "15 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 606,
+    "stage_id": "wc-2026-006",
+    "date": "2026-01-25T18:15:00",
+    "discipline": "Mass-start",
+    "gender": "Women",
+    "distance": "12.5 km",
+    "status": "finished",
+    "results": []
+  },
+
+  {
+    "id": 701,
+    "stage_id": "wc-2026-007",
+    "date": "2026-03-05T17:05:00",
+    "discipline": "Individual",
+    "gender": "Women",
+    "distance": "15 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 702,
+    "stage_id": "wc-2026-007",
+    "date": "2026-03-06T17:10:00",
+    "discipline": "Individual",
+    "gender": "Men",
+    "distance": "20 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 703,
+    "stage_id": "wc-2026-007",
+    "date": "2026-03-07T13:40:00",
+    "discipline": "Mass-start",
+    "gender": "Women",
+    "distance": "12.5 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 704,
+    "stage_id": "wc-2026-007",
+    "date": "2026-03-07T15:40:00",
+    "discipline": "Relay",
+    "gender": "Men",
+    "distance": "4x7.5 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 705,
+    "stage_id": "wc-2026-007",
+    "date": "2026-03-08T13:30:00",
+    "discipline": "Relay",
+    "gender": "Women",
+    "distance": "4x6 km",
+    "status": "finished",
+    "results": []
+  },
+  {
+    "id": 706,
+    "stage_id": "wc-2026-007",
+    "date": "2026-03-08T16:55:00",
+    "discipline": "Mass-start",
+    "gender": "Men",
+    "distance": "15 km",
+    "status": "finished",
+    "results": []
+  },
+
+  {
+    "id": 801,
+    "stage_id": "wc-2026-008",
+    "date": "2026-03-12T15:15:00",
+    "discipline": "Sprint",
+    "gender": "Men",
+    "distance": "10 km",
+    "status": "scheduled",
+    "results": []
+  },
+  {
+    "id": 802,
+    "stage_id": "wc-2026-008",
+    "date": "2026-03-13T15:15:00",
+    "discipline": "Sprint",
+    "gender": "Women",
+    "distance": "7.5 km",
+    "status": "scheduled",
+    "results": []
+  },
+  {
+    "id": 803,
+    "stage_id": "wc-2026-008",
+    "date": "2026-03-14T13:30:00",
+    "discipline": "Pursuit",
+    "gender": "Men",
+    "distance": "12.5 km",
+    "status": "scheduled",
+    "results": []
+  },
+  {
+    "id": 804,
+    "stage_id": "wc-2026-008",
+    "date": "2026-03-14T16:00:00",
+    "discipline": "Pursuit",
+    "gender": "Women",
+    "distance": "10 km",
+    "status": "scheduled",
+    "results": []
+  },
+  {
+    "id": 805,
+    "stage_id": "wc-2026-008",
+    "date": "2026-03-15T12:35:00",
+    "discipline": "Single Mixed Relay",
+    "gender": "Men & Women",
+    "distance": "",
+    "status": "scheduled",
+    "results": []
+  },
+  {
+    "id": 806,
+    "stage_id": "wc-2026-008",
+    "date": "2026-03-15T14:40:00",
+    "discipline": "Mixed Relay",
+    "gender": "Men & Women",
+    "distance": "",
+    "status": "scheduled",
+    "results": []
+  },
+
+  {
+    "id": 901,
+    "stage_id": "wc-2026-009",
+    "date": "2026-03-19T16:15:00",
+    "discipline": "Sprint",
+    "gender": "Women",
+    "distance": "7.5 km",
+    "status": "scheduled",
+    "results": []
+  },
+  {
+    "id": 902,
+    "stage_id": "wc-2026-009",
+    "date": "2026-03-20T16:15:00",
+    "discipline": "Sprint",
+    "gender": "Men",
+    "distance": "10 km",
+    "status": "scheduled",
+    "results": []
+  },
+  {
+    "id": 903,
+    "stage_id": "wc-2026-009",
+    "date": "2026-03-21T13:45:00",
+    "discipline": "Pursuit",
+    "gender": "Women",
+    "distance": "10 km",
+    "status": "scheduled",
+    "results": []
+  },
+  {
+    "id": 904,
+    "stage_id": "wc-2026-009",
+    "date": "2026-03-21T16:15:00",
+    "discipline": "Pursuit",
+    "gender": "Men",
+    "distance": "12.5 km",
+    "status": "scheduled",
+    "results": []
+  },
+  {
+    "id": 905,
+    "stage_id": "wc-2026-009",
+    "date": "2026-03-22T13:45:00",
+    "discipline": "Mass-start",
+    "gender": "Women",
+    "distance": "12.5 km",
+    "status": "scheduled",
+    "results": []
+  },
+  {
+    "id": 906,
+    "stage_id": "wc-2026-009",
+    "date": "2026-03-22T13:45:00",
+    "discipline": "Mass-start",
+    "gender": "Men",
+    "distance": "15 km",
+    "status": "scheduled",
+    "results": []
+  }
+]
