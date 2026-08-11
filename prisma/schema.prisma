@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client"
+  output   = "/src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Gender {
+  Men
+  Women
+  WandM
+}
+
+enum Status {
+  scheduled
+  online
+  finished
+}
+
+model Competitions {
+  id String @unique
+  stage_id String
+  date DateTime
+  discipline String
+  gender Gender
+  distance String
+  status Status
+
+  @@map("competitions")
+}
+
+
+model Stages {
+id String @unique
+name String
+location String
+start_date DateTime
+end_date DateTime
+competitions Competitions
+   
+  @@map("stages")
+}
