@@ -10,35 +10,87 @@ datasource db {
 enum Gender {
   Men
   Women
-  WandM
+  Mixed
 }
 
 enum Status {
-  scheduled
-  online
-  finished
+  Scheduled
+  Ongoing
+  Finished
+  Cancelled
 }
 
-model Competitions {
-  id String @unique
-  stage_id String
-  date DateTime
-  discipline String
-  gender Gender
-  distance String
-  status Status
-
-  @@map("competitions")
+enum Discipline {
+  Sprint
+  Pursuit
+  Individual
+  MassStart
+  Relay
+  MixedRelay
+  SingleMixedRelay
 }
 
+model Race {
+  id         String     @id @unique
+  stageId    String     @map("stage_id")
+  stage      Stage      @relation(fields: [stageId], references: [id], onDelete: Cascade)
+  date       DateTime   @default(now())
+  discipline Discipline
+  gender     Gender
+  distance   String
+  status     Status     @default(Scheduled)
+  result     Result[]
 
-model Stages {
-id String @unique
-name String
-location String
-start_date DateTime
-end_date DateTime
-competitions Competitions
-   
-  @@map("stages")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@unique([stageId, discipline, gender])
+  @@map("race")
+}
+
+model Stage {
+  id         String   @id @default(cuid())
+  name       String
+  location   String
+  start_date DateTime
+  end_date   DateTime
+  race       Race[]
+
+  @@map("stage")
+}
+
+model Result {
+  id        String  @id @default(cuid())
+  raceId    String  @map("race_id")
+  race      Race    @relation(fields: [raceId], references: [id])
+  athleteId String  @map("athlete_id")
+  athlete   Athlete @relation(fields: [athleteId], references: [id])
+
+  country String
+  leg     Int?
+
+  position Int?
+  time     String?
+  misses   String?
+  points   Int?
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@unique([raceId, athleteId])
+  @@map("result")
+}
+
+model Athlete {
+  id        String   @id @default(cuid())
+  firstName String   @map("first_name")
+  lastName  String   @map("last_name")
+  country   String
+  result    Result[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@unique([firstName, lastName])
+  @@map("athlete")
 }
