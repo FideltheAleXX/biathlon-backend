@@ -1,10 +1,10 @@
 import { Injectable, Inject, NotFoundException } from '@nestjs/common';
 import { Pool } from 'pg';
-import { CreateCompetitionsDto } from './dto/create-competitions.dto';
-import { CompetitionsDto } from './dto/competitions.dto';
+import { CreateRaceDto } from './dto/create-race.dto';
+import { RaceDto } from './dto/races.dto';
 
 @Injectable()
-export class CompetitionsService {
+export class RaceService {
   constructor(@Inject('DATABASE_POOL') private readonly db: Pool) {}
 
   async getAll() {
@@ -50,9 +50,7 @@ export class CompetitionsService {
     return result.rows[0];
   }
 
-  async createCompetitions(
-    data: CreateCompetitionsDto,
-  ): Promise<CompetitionsDto> {
+  async createCompetitions(data: CreateRaceDto): Promise<RaceDto> {
     const { id, stageId, date, discipline, gender, distance, status } = data;
 
     const queryText = `
@@ -66,10 +64,7 @@ RETURNING id, stage_id AS "stageId", date, discipline, gender, distance, status;
     return result.rows[0];
   }
 
-  async updateCompetitions(
-    id: string,
-    data: CreateCompetitionsDto,
-  ): Promise<CompetitionsDto> {
+  async updateCompetitions(id: string, data: CreateRaceDto): Promise<RaceDto> {
     const queryText = `
       UPDATE competitions
       SET 

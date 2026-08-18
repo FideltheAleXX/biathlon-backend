@@ -5,9 +5,9 @@ import {
   IsNumber,
   IsEnum,
 } from 'class-validator';
-import { CompetitionsStatus } from './competitions-status.dto';
+import { RaceStatus } from './race-status.dto';
 
-export class CreateCompetitionsDto {
+export class CreateRaceDto {
   @IsNumber()
   @IsNotEmpty()
   id!: number;
@@ -31,6 +31,6 @@ export class CreateCompetitionsDto {
   @IsString()
   distance?: string[];
 
-  @IsEnum(CompetitionsStatus)
-  status!: CompetitionsStatus;
+  @IsEnum(RaceStatus)
+  status!: RaceStatus;
 }

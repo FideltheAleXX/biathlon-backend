@@ -30,6 +30,17 @@ enum Discipline {
   SingleMixedRelay
 }
 
+model Stage {
+  id         String   @id @default(cuid())
+  name       String
+  location   String
+  start_date DateTime
+  end_date   DateTime
+  race       Race[]
+
+  @@map("stage")
+}
+
 model Race {
   id         String     @id @unique
   stageId    String     @map("stage_id")
@@ -46,17 +57,6 @@ model Race {
 
   @@unique([stageId, discipline, gender])
   @@map("race")
-}
-
-model Stage {
-  id         String   @id @default(cuid())
-  name       String
-  location   String
-  start_date DateTime
-  end_date   DateTime
-  race       Race[]
-
-  @@map("stage")
 }
 
 model Result {
