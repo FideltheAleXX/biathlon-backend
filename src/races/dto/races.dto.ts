@@ -1,11 +1,12 @@
-import { RaceStatus } from './race-status.dto';
+import { Discipline, Gender, Status } from '../../../prisma/generated/enums';
 
 export class RaceDto {
-  id!: number;
-  stage_id!: string;
-  date!: string;
-  discipline!: string;
-  gender!: string;
+  id!: string;
+  stageId!: string;
+  date!: Date;
+  discipline!: Discipline;
+  gender!: Gender;
   distance!: string;
-  status!: RaceStatus;
+  status!: Status;
+  result?: unknown[]; //TODO
 }

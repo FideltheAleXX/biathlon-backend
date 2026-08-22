@@ -1,4 +1,5 @@
 import { IsString, IsDateString, IsNotEmpty, IsArray } from 'class-validator';
+import { RaceDto } from '../../races/dto/races.dto';
 
 export class CreateStageDto {
   @IsString()
@@ -6,7 +7,7 @@ export class CreateStageDto {
   id!: string;
 
   @IsString()
-  @IsNotEmpty({ message: 'Название этапа не должно быть пустым' })
+  @IsNotEmpty({ message: 'Назва етапу не повинна бути пуста' })
   name!: string;
 
   @IsString()
@@ -14,11 +15,11 @@ export class CreateStageDto {
   location!: string;
 
   @IsDateString()
-  startDate!: string;
+  startDate!: Date;
 
   @IsDateString()
-  endDate!: string;
+  endDate!: Date;
 
   @IsArray()
-  competitions?: string[];
+  race?: RaceDto[];
 }

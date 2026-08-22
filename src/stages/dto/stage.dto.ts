@@ -1,8 +1,10 @@
+import { RaceDto } from '../../races/dto/races.dto';
+
 export class StageDto {
   id!: string;
   name!: string;
   location!: string;
-  startDate!: string;
-  endDate!: string;
-  competitions?: string[];
+  startDate!: Date;
+  endDate!: Date;
+  race?: RaceDto[];
 }

@@ -2,10 +2,11 @@ import { Module } from '@nestjs/common';
 import { StagesController } from './stages.controller';
 import { StagesService } from './stages.service';
 import { DatabaseModule } from '../database/database.module';
-import { CompetitionsModule } from 'src/races/races.module';
+import { RaceModule } from '../races/race.module';
+import { PrismaModule } from '../prisma/prisma.module';
 
 @Module({
-  imports: [DatabaseModule, CompetitionsModule],
+  imports: [DatabaseModule, RaceModule, PrismaModule],
   controllers: [StagesController],
   providers: [StagesService],
 })

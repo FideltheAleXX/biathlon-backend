@@ -1,6 +1,6 @@
 generator client {
   provider = "prisma-client"
-  output   = "/src/generated/prisma"
+  output   = "./generated"
 }
 
 datasource db {
@@ -31,12 +31,12 @@ enum Discipline {
 }
 
 model Stage {
-  id         String   @id @default(cuid())
-  name       String
-  location   String
-  start_date DateTime
-  end_date   DateTime
-  race       Race[]
+  id        String   @id @default(cuid())
+  name      String
+  location  String
+  startDate DateTime @map("start_date")
+  endDate   DateTime @map("end_date")
+  race      Race[]
 
   @@map("stage")
 }

@@ -23,7 +23,7 @@ export class StagesController {
   }
 
   @Get(':id')
-  async getOneStage(@Param('id') id: string): Promise<StageDto[]> {
+  async getOneStage(@Param('id') id: string): Promise<StageDto> {
     return this.stagesService.getOne(id);
   }
 
