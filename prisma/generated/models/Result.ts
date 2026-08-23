@@ -227,7 +227,7 @@ export type ResultGroupByOutputType = {
   id: string
   raceId: string
   athleteId: string
-  country: string
+  country: string | null
   leg: number | null
   position: number | null
   time: string | null
@@ -264,7 +264,7 @@ export type ResultWhereInput = {
   id?: Prisma.StringFilter<"Result"> | string
   raceId?: Prisma.StringFilter<"Result"> | string
   athleteId?: Prisma.StringFilter<"Result"> | string
-  country?: Prisma.StringFilter<"Result"> | string
+  country?: Prisma.StringNullableFilter<"Result"> | string | null
   leg?: Prisma.IntNullableFilter<"Result"> | number | null
   position?: Prisma.IntNullableFilter<"Result"> | number | null
   time?: Prisma.StringNullableFilter<"Result"> | string | null
@@ -280,7 +280,7 @@ export type ResultOrderByWithRelationInput = {
   id?: Prisma.SortOrder
   raceId?: Prisma.SortOrder
   athleteId?: Prisma.SortOrder
-  country?: Prisma.SortOrder
+  country?: Prisma.SortOrderInput | Prisma.SortOrder
   leg?: Prisma.SortOrderInput | Prisma.SortOrder
   position?: Prisma.SortOrderInput | Prisma.SortOrder
   time?: Prisma.SortOrderInput | Prisma.SortOrder
@@ -300,7 +300,7 @@ export type ResultWhereUniqueInput = Prisma.AtLeast<{
   NOT?: Prisma.ResultWhereInput | Prisma.ResultWhereInput[]
   raceId?: Prisma.StringFilter<"Result"> | string
   athleteId?: Prisma.StringFilter<"Result"> | string
-  country?: Prisma.StringFilter<"Result"> | string
+  country?: Prisma.StringNullableFilter<"Result"> | string | null
   leg?: Prisma.IntNullableFilter<"Result"> | number | null
   position?: Prisma.IntNullableFilter<"Result"> | number | null
   time?: Prisma.StringNullableFilter<"Result"> | string | null
@@ -316,7 +316,7 @@ export type ResultOrderByWithAggregationInput = {
   id?: Prisma.SortOrder
   raceId?: Prisma.SortOrder
   athleteId?: Prisma.SortOrder
-  country?: Prisma.SortOrder
+  country?: Prisma.SortOrderInput | Prisma.SortOrder
   leg?: Prisma.SortOrderInput | Prisma.SortOrder
   position?: Prisma.SortOrderInput | Prisma.SortOrder
   time?: Prisma.SortOrderInput | Prisma.SortOrder
@@ -338,7 +338,7 @@ export type ResultScalarWhereWithAggregatesInput = {
   id?: Prisma.StringWithAggregatesFilter<"Result"> | string
   raceId?: Prisma.StringWithAggregatesFilter<"Result"> | string
   athleteId?: Prisma.StringWithAggregatesFilter<"Result"> | string
-  country?: Prisma.StringWithAggregatesFilter<"Result"> | string
+  country?: Prisma.StringNullableWithAggregatesFilter<"Result"> | string | null
   leg?: Prisma.IntNullableWithAggregatesFilter<"Result"> | number | null
   position?: Prisma.IntNullableWithAggregatesFilter<"Result"> | number | null
   time?: Prisma.StringNullableWithAggregatesFilter<"Result"> | string | null
@@ -350,7 +350,7 @@ export type ResultScalarWhereWithAggregatesInput = {
 
 export type ResultCreateInput = {
   id?: string
-  country: string
+  country?: string | null
   leg?: number | null
   position?: number | null
   time?: string | null
@@ -366,7 +366,7 @@ export type ResultUncheckedCreateInput = {
   id?: string
   raceId: string
   athleteId: string
-  country: string
+  country?: string | null
   leg?: number | null
   position?: number | null
   time?: string | null
@@ -378,7 +378,7 @@ export type ResultUncheckedCreateInput = {
 
 export type ResultUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
-  country?: Prisma.StringFieldUpdateOperationsInput | string
+  country?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   leg?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   position?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   time?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -394,7 +394,7 @@ export type ResultUncheckedUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   raceId?: Prisma.StringFieldUpdateOperationsInput | string
   athleteId?: Prisma.StringFieldUpdateOperationsInput | string
-  country?: Prisma.StringFieldUpdateOperationsInput | string
+  country?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   leg?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   position?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   time?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -408,7 +408,7 @@ export type ResultCreateManyInput = {
   id?: string
   raceId: string
   athleteId: string
-  country: string
+  country?: string | null
   leg?: number | null
   position?: number | null
   time?: string | null
@@ -420,7 +420,7 @@ export type ResultCreateManyInput = {
 
 export type ResultUpdateManyMutationInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
-  country?: Prisma.StringFieldUpdateOperationsInput | string
+  country?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   leg?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   position?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   time?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -434,7 +434,7 @@ export type ResultUncheckedUpdateManyInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   raceId?: Prisma.StringFieldUpdateOperationsInput | string
   athleteId?: Prisma.StringFieldUpdateOperationsInput | string
-  country?: Prisma.StringFieldUpdateOperationsInput | string
+  country?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   leg?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   position?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   time?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -555,16 +555,16 @@ export type ResultUncheckedUpdateManyWithoutRaceNestedInput = {
   deleteMany?: Prisma.ResultScalarWhereInput | Prisma.ResultScalarWhereInput[]
 }
 
+export type NullableStringFieldUpdateOperationsInput = {
+  set?: string | null
+}
+
 export type NullableIntFieldUpdateOperationsInput = {
   set?: number | null
   increment?: number
   decrement?: number
   multiply?: number
   divide?: number
-}
-
-export type NullableStringFieldUpdateOperationsInput = {
-  set?: string | null
 }
 
 export type ResultCreateNestedManyWithoutAthleteInput = {
@@ -611,7 +611,7 @@ export type ResultUncheckedUpdateManyWithoutAthleteNestedInput = {
 
 export type ResultCreateWithoutRaceInput = {
   id?: string
-  country: string
+  country?: string | null
   leg?: number | null
   position?: number | null
   time?: string | null
@@ -625,7 +625,7 @@ export type ResultCreateWithoutRaceInput = {
 export type ResultUncheckedCreateWithoutRaceInput = {
   id?: string
   athleteId: string
-  country: string
+  country?: string | null
   leg?: number | null
   position?: number | null
   time?: string | null
@@ -668,7 +668,7 @@ export type ResultScalarWhereInput = {
   id?: Prisma.StringFilter<"Result"> | string
   raceId?: Prisma.StringFilter<"Result"> | string
   athleteId?: Prisma.StringFilter<"Result"> | string
-  country?: Prisma.StringFilter<"Result"> | string
+  country?: Prisma.StringNullableFilter<"Result"> | string | null
   leg?: Prisma.IntNullableFilter<"Result"> | number | null
   position?: Prisma.IntNullableFilter<"Result"> | number | null
   time?: Prisma.StringNullableFilter<"Result"> | string | null
@@ -680,7 +680,7 @@ export type ResultScalarWhereInput = {
 
 export type ResultCreateWithoutAthleteInput = {
   id?: string
-  country: string
+  country?: string | null
   leg?: number | null
   position?: number | null
   time?: string | null
@@ -694,7 +694,7 @@ export type ResultCreateWithoutAthleteInput = {
 export type ResultUncheckedCreateWithoutAthleteInput = {
   id?: string
   raceId: string
-  country: string
+  country?: string | null
   leg?: number | null
   position?: number | null
   time?: string | null
@@ -733,7 +733,7 @@ export type ResultUpdateManyWithWhereWithoutAthleteInput = {
 export type ResultCreateManyRaceInput = {
   id?: string
   athleteId: string
-  country: string
+  country?: string | null
   leg?: number | null
   position?: number | null
   time?: string | null
@@ -745,7 +745,7 @@ export type ResultCreateManyRaceInput = {
 
 export type ResultUpdateWithoutRaceInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
-  country?: Prisma.StringFieldUpdateOperationsInput | string
+  country?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   leg?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   position?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   time?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -759,7 +759,7 @@ export type ResultUpdateWithoutRaceInput = {
 export type ResultUncheckedUpdateWithoutRaceInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   athleteId?: Prisma.StringFieldUpdateOperationsInput | string
-  country?: Prisma.StringFieldUpdateOperationsInput | string
+  country?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   leg?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   position?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   time?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -772,7 +772,7 @@ export type ResultUncheckedUpdateWithoutRaceInput = {
 export type ResultUncheckedUpdateManyWithoutRaceInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   athleteId?: Prisma.StringFieldUpdateOperationsInput | string
-  country?: Prisma.StringFieldUpdateOperationsInput | string
+  country?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   leg?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   position?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   time?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -785,7 +785,7 @@ export type ResultUncheckedUpdateManyWithoutRaceInput = {
 export type ResultCreateManyAthleteInput = {
   id?: string
   raceId: string
-  country: string
+  country?: string | null
   leg?: number | null
   position?: number | null
   time?: string | null
@@ -797,7 +797,7 @@ export type ResultCreateManyAthleteInput = {
 
 export type ResultUpdateWithoutAthleteInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
-  country?: Prisma.StringFieldUpdateOperationsInput | string
+  country?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   leg?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   position?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   time?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -811,7 +811,7 @@ export type ResultUpdateWithoutAthleteInput = {
 export type ResultUncheckedUpdateWithoutAthleteInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   raceId?: Prisma.StringFieldUpdateOperationsInput | string
-  country?: Prisma.StringFieldUpdateOperationsInput | string
+  country?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   leg?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   position?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   time?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -824,7 +824,7 @@ export type ResultUncheckedUpdateWithoutAthleteInput = {
 export type ResultUncheckedUpdateManyWithoutAthleteInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   raceId?: Prisma.StringFieldUpdateOperationsInput | string
-  country?: Prisma.StringFieldUpdateOperationsInput | string
+  country?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   leg?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   position?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   time?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -922,7 +922,7 @@ export type $ResultPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs
     id: string
     raceId: string
     athleteId: string
-    country: string
+    country: string | null
     leg: number | null
     position: number | null
     time: string | null
