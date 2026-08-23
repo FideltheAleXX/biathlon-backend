@@ -4,6 +4,7 @@ import { PrismaModule } from '../prisma/prisma.module';
 import { RaceModule } from '../races/race.module';
 import { StagesModule } from '../stages/stages.module';
 import { ResultController } from './result.controller';
+import { ResultService } from './result.service';
 
 @Module({
   imports: [DatabaseModule, RaceModule, PrismaModule, StagesModule],

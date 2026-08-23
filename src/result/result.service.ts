@@ -17,7 +17,7 @@ export class ResultService {
           },
         },
       },
-      orderBy: [{ stage: { startTime: 'desc' } }, { position: 'asc' }],
+      orderBy: [{ race: { id: 'asc' } }, { position: 'asc' }],
     });
   }
 

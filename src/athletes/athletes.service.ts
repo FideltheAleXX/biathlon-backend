@@ -12,9 +12,7 @@ export class AthletesService {
       orderBy: [
         {
           result: {
-            _max: {
-              points: 'desc',
-            },
+            _count: 'desc',
           },
         },
         {

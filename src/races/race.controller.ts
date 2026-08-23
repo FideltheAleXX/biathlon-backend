@@ -23,13 +23,13 @@ export class RaceController {
   }
 
   @Get(':id')
-  async getOneRace(@Param('id') id: string): Promise<RaceDto[]> {
+  async getOneRace(@Param('id') id: string): Promise<RaceDto> {
     return this.raceService.getOne(id);
   }
 
   @Post()
   async createRace(@Body() data: CreateRaceDto): Promise<RaceDto> {
-    return this.raceService.createCompetitions(data);
+    return this.raceService.createRace(data);
   }
 
   @Put(':id')
@@ -37,7 +37,7 @@ export class RaceController {
     @Param('id') id: string,
     @Body() data: CreateRaceDto,
   ): Promise<RaceDto> {
-    return this.raceService.updateCompetitions(id, data);
+    return this.raceService.updateRace(id, data);
   }
 
   @Delete(':id')
