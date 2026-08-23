@@ -1,4 +1,5 @@
 import { Discipline, Gender, Status } from '../../../prisma/generated/enums';
+import { ResultDto } from '../../result/dto/result.dto';
 
 export class RaceDto {
   id!: string;
@@ -8,5 +9,5 @@ export class RaceDto {
   gender!: Gender;
   distance!: string;
   status!: Status;
-  result?: unknown[]; //TODO
+  result?: ResultDto[];
 }

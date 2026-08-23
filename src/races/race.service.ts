@@ -13,7 +13,6 @@ export class RaceService {
       orderBy: {
         id: 'asc',
       },
-      //include: {stage: true}, TODO
     });
     return races;
   }

@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import { PrismaPg } from '@prisma/adapter-pg';
-import { Discipline, Gender, PrismaClient, Status } from './generated/client';
-import stagesData from './data/stages.json';
+import { Discipline, Gender, PrismaClient, Status } from '../generated/client';
+import stagesData from '../data/stages.json';
 
 const adapter = new PrismaPg({
   connectionString: process.env.DATABASE_URL,
@@ -40,8 +40,8 @@ async function main() {
         id: stage.id,
         name: stage.name,
         location: stage.location,
-        start_date: new Date(stage.start_date),
-        end_date: new Date(stage.end_date),
+        startDate: new Date(stage.start_date),
+        endDate: new Date(stage.end_date),
         race: {
           create: stage.race.map((race) => ({
             id: String(race.id),
@@ -61,7 +61,7 @@ async function main() {
 
 main()
   .catch((e) => {
-    console.error('❌ Помилка при заповненні БД:', e);
+    console.error('Помилка при заповненні БД:', e);
     process.exit(1);
   })
   .finally(async () => {

@@ -1,4 +1,5 @@
 import { IsNotEmpty, IsString } from 'class-validator';
+import { ResultDto } from '../../result/dto/result.dto';
 
 export class CreateAthleteDto {
   @IsString()
@@ -18,5 +19,5 @@ export class CreateAthleteDto {
   country!: string;
 
   @IsString()
-  result?: unknown[]; //TODO
+  result?: ResultDto[];
 }
