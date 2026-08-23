@@ -1,7 +1,7 @@
 export class AthleteDto {
-  id!: number;
+  id!: string;
   firstName!: string;
   lastName!: string;
   country!: string;
-  score: number = 0;
+  result?: unknown[]; //TODO
 }

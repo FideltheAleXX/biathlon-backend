@@ -10,37 +10,39 @@ import {
   HttpStatus,
 } from '@nestjs/common';
 import { AthletesService } from './athletes.service';
+import { AthleteDto } from './dto/athlete.dto';
+import { CreateAthleteDto } from './dto/create-athlete.dto';
 
 @Controller('athletes')
 export class AthletesController {
   constructor(private readonly athletesService: AthletesService) {}
 
   @Get()
-  async getAllAthlete(){
+  async getAllAthletes(): Promise<AthleteDto[]> {
     return this.athletesService.getAll();
   }
 
   @Get(':id')
-  async getOneAthlete(@Param('id') id: number) {
+  async getOneAthlete(@Param('id') id: string) {
     return this.athletesService.getOne(id);
   }
 
   @Post()
-  async createStage(@Body() data: ){
+  async createAthlete(@Body() data: CreateAthleteDto): Promise<AthleteDto> {
     return this.athletesService.createAthlete(data);
   }
 
   @Put(':id')
-  async updateStage(
-    @Param('id') id: number,
-    @Body() data:,
-  ) {
+  async updateAthlete(
+    @Param('id') id: string,
+    @Body() data: CreateAthleteDto,
+  ): Promise<AthleteDto> {
     return this.athletesService.updateAthlete(id, data);
   }
 
   @Delete(':id')
   @HttpCode(HttpStatus.NO_CONTENT)
-  async deleteStage(@Param('id') id: number) {
+  async deleteAthlete(@Param('id') id: string): Promise<void> {
     await this.athletesService.deleteAthlete(id);
   }
 }

@@ -1,16 +1,10 @@
-import {
-  IsString,
-  IsDateString,
-  IsNotEmpty,
-  IsNumber,
-  IsEnum,
-} from 'class-validator';
-import { RaceStatus } from './race-status.dto';
+import { IsString, IsDateString, IsNotEmpty, IsEnum } from 'class-validator';
+import { Discipline, Gender, Status } from '../../../prisma/generated/enums';
 
 export class CreateRaceDto {
-  @IsNumber()
+  @IsString()
   @IsNotEmpty()
-  id!: number;
+  id!: string;
 
   @IsString()
   @IsNotEmpty()
@@ -18,19 +12,21 @@ export class CreateRaceDto {
 
   @IsDateString()
   @IsNotEmpty()
-  date!: string;
+  date!: Date;
+
+  @IsNotEmpty()
+  @IsEnum(Discipline)
+  discipline!: Discipline;
+
+  @IsNotEmpty()
+  @IsEnum(Gender)
+  gender!: Gender;
 
   @IsString()
   @IsNotEmpty()
-  discipline!: string;
+  distance!: string;
 
-  @IsString()
+  @IsEnum(Status)
   @IsNotEmpty()
-  gender!: string;
-
-  @IsString()
-  distance?: string[];
-
-  @IsEnum(RaceStatus)
-  status!: RaceStatus;
+  status!: Status;
 }

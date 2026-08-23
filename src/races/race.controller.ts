@@ -10,37 +10,30 @@ import {
   HttpStatus,
 } from '@nestjs/common';
 import { RaceService } from './race.service';
-import { RaceDto } from './dto/races.dto';
+import { RaceDto } from './dto/race.dto';
 import { CreateRaceDto } from './dto/create-race.dto';
 
-@Controller('stages')
+@Controller('races')
 export class RaceController {
   constructor(private readonly raceService: RaceService) {}
 
   @Get()
-  async getAllCompetitions(): Promise<RaceDto[]> {
+  async getAllRaces(): Promise<RaceDto[]> {
     return this.raceService.getAll();
   }
 
-  @Get('stage/:stageId')
-  async getAllCompetitionsFromStage(
-    @Param('stageId') stageId: string,
-  ): Promise<RaceDto[]> {
-    return this.raceService.getAllFromOneStage(stageId);
-  }
-
   @Get(':id')
-  async getOneCompetitions(@Param('id') id: string): Promise<RaceDto[]> {
+  async getOneRace(@Param('id') id: string): Promise<RaceDto[]> {
     return this.raceService.getOne(id);
   }
 
   @Post()
-  async createCompetitions(@Body() data: CreateRaceDto): Promise<RaceDto> {
+  async createRace(@Body() data: CreateRaceDto): Promise<RaceDto> {
     return this.raceService.createCompetitions(data);
   }
 
   @Put(':id')
-  async updateCompetitions(
+  async updateRace(
     @Param('id') id: string,
     @Body() data: CreateRaceDto,
   ): Promise<RaceDto> {
@@ -49,7 +42,7 @@ export class RaceController {
 
   @Delete(':id')
   @HttpCode(HttpStatus.NO_CONTENT)
-  async deleteCompetitions(@Param('id') id: string): Promise<void> {
-    await this.raceService.deleteCompetitions(id);
+  async deleteRace(@Param('id') id: string): Promise<void> {
+    await this.raceService.deleteRace(id);
   }
 }

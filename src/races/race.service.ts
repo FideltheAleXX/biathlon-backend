@@ -1,113 +1,72 @@
 import { Injectable, Inject, NotFoundException } from '@nestjs/common';
 import { Pool } from 'pg';
 import { CreateRaceDto } from './dto/create-race.dto';
-import { RaceDto } from './dto/races.dto';
+import { RaceDto } from './dto/race.dto';
+import { PrismaService } from '../prisma/prisma.service';
 
 @Injectable()
 export class RaceService {
-  constructor(@Inject('DATABASE_POOL') private readonly db: Pool) {}
+  constructor(private readonly prisma: PrismaService) {}
 
-  async getAll() {
-    const queryText = `
-      SELECT * FROM competitions ORDER BY id DESC;
-    `;
-
-    const result = await this.db.query(queryText);
-    return result.rows;
+  async getAll(): Promise<RaceDto[]> {
+    const races = await this.prisma.race.findMany({
+      orderBy: {
+        id: 'asc',
+      },
+      //include: {stage: true}, TODO
+    });
+    return races;
   }
 
-  async getAllFromOneStage(stageId: string) {
-    const queryText = `
-       SELECT * 
-    FROM competitions 
-    WHERE stage_id = $1
-    ORDER BY id DESC;
-    `;
+  async getOne(id: string): Promise<RaceDto> {
+    const race = await this.prisma.race.findFirst({
+      where: { id },
+    });
 
-    const result = await this.db.query(queryText, [stageId]);
-
-    if (result.rows.length === 0) {
-      throw new NotFoundException(
-        `Competitions with stageId ${stageId} not found`,
-      );
+    if (!race) {
+      throw new NotFoundException(`Race with ID "${id}" not found`);
     }
-    return result.rows;
+    return race;
   }
 
-  async getOne(id: string) {
-    const queryText = `
-      SELECT * 
-    FROM competitions 
-    WHERE id = $1;
-    `;
-
-    const result = await this.db.query(queryText, [id]);
-
-    if (result.rows.length === 0) {
-      throw new NotFoundException(`Competitions with ID ${id} not found`);
-    }
-
-    return result.rows[0];
-  }
-
-  async createCompetitions(data: CreateRaceDto): Promise<RaceDto> {
+  async createRace(data: CreateRaceDto): Promise<RaceDto> {
     const { id, stageId, date, discipline, gender, distance, status } = data;
 
-    const queryText = `
-      INSERT INTO competitions (id, stage_id, date, discipline, gender, distance, status)
-VALUES ($1, $2, $3, $4, $5, $6, $7)
-RETURNING id, stage_id AS "stageId", date, discipline, gender, distance, status;
-    `;
-    const values = [id, stageId, date, discipline, gender, distance, status];
-    const result = await this.db.query(queryText, values);
-
-    return result.rows[0];
+    return this.prisma.race.create({
+      data: {
+        id,
+        stageId,
+        date,
+        discipline,
+        gender,
+        distance,
+        status,
+      },
+    });
   }
 
-  async updateCompetitions(id: string, data: CreateRaceDto): Promise<RaceDto> {
-    const queryText = `
-      UPDATE competitions
-      SET 
-        stage_id = $1, 
-        date = $2, 
-        discipline = $3, 
-        gender = $4,
-        distance = $5,
-        status = $6
-      WHERE id = $7
-      RETURNING id, stage_id AS "stageId", date, discipline, gender, distance, status;
-    `;
+  async updateRace(id: string, data: CreateRaceDto): Promise<RaceDto> {
+    const { stageId, date, discipline, gender, distance, status } = data;
 
-    const values = [
-      data.stageId,
-      data.date,
-      data.discipline,
-      data.gender,
-      data.distance,
-      data.status,
-      id,
-    ];
-
-    const result = await this.db.query(queryText, values);
-
-    if (result.rows.length === 0) {
-      throw new NotFoundException(`Competitions with ID ${id} not found`);
-    }
-
-    return result.rows[0];
+    return (
+      this,
+      this.prisma.race.update({
+        where: { id },
+        data: {
+          stageId,
+          date,
+          discipline,
+          gender,
+          distance,
+          status,
+        },
+      })
+    );
   }
 
-  async deleteCompetitions(id: string) {
-    const queryText = `
-      DELETE FROM competitions WHERE id = $1 RETURNING *;
-    `;
-
-    const result = await this.db.query(queryText, [id]);
-
-    if (result.rows.length === 0) {
-      throw new NotFoundException(`Competitions with ID ${id} not found`);
-    }
-
-    return result.rows[0];
+  async deleteRace(id: string) {
+    await this.prisma.race.delete({
+      where: { id },
+    });
   }
 }

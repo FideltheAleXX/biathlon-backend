@@ -19,7 +19,7 @@ export class StagesService {
   }
 
   async getOne(id: string): Promise<StageDto> {
-    const stage = await this.prisma.stage.findUnique({
+    const stage = await this.prisma.stage.findFirst({
       where: { id },
       include: {
         race: {

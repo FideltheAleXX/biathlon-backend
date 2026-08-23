@@ -1,5 +1,5 @@
 import { IsString, IsDateString, IsNotEmpty, IsArray } from 'class-validator';
-import { RaceDto } from '../../races/dto/races.dto';
+import { RaceDto } from '../../races/dto/race.dto';
 
 export class CreateStageDto {
   @IsString()
