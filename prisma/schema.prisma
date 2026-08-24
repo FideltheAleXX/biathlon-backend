@@ -31,6 +31,11 @@ enum Discipline {
   SingleMixedRelay
 }
 
+enum GenderId {
+  Male
+  Female
+}
+
 model Stage {
   id        String   @id @default(cuid())
   name      String
@@ -87,6 +92,7 @@ model Athlete {
   firstName String   @map("first_name")
   lastName  String   @map("last_name")
   country   String
+  genderId  GenderId @map("gender_id")
   result    Result[]
 
   createdAt DateTime @default(now()) @map("created_at")

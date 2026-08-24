@@ -17,6 +17,7 @@ async function importAthletes() {
         firstName: athlete.firstName,
         lastName: athlete.lastName,
         country: athlete.country,
+        genderId: athlete.genderId,
       },
     });
   }

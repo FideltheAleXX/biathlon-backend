@@ -11,11 +11,6 @@ export class AthletesService {
     const athletes = await this.prisma.athlete.findMany({
       orderBy: [
         {
-          result: {
-            _count: 'desc',
-          },
-        },
-        {
           lastName: 'asc',
         },
       ],
@@ -36,7 +31,7 @@ export class AthletesService {
   }
 
   async createAthlete(data: CreateAthleteDto): Promise<AthleteDto> {
-    const { id, firstName, lastName, country } = data;
+    const { id, firstName, lastName, country, genderId } = data;
 
     return this.prisma.athlete.create({
       data: {
@@ -44,6 +39,7 @@ export class AthletesService {
         firstName,
         lastName,
         country,
+        genderId,
       },
     });
   }
