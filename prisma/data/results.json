@@ -1,0 +1,322 @@
+[
+  {
+    "position": 1,
+    "athlete": "WIERER Dorothea",
+    "country": "ITA",
+    "time": "43:08.0",
+    "misses": "2",
+    "points": "90"
+  },
+  {
+    "position": 2,
+    "athlete": "LEINAMO Sonja",
+    "country": "FIN",
+    "time": "+0.3",
+    "misses": "1",
+    "points": "75"
+  },
+  {
+    "position": 3,
+    "athlete": "BENED Camille",
+    "country": "FRA",
+    "time": "+8.4",
+    "misses": "1",
+    "points": "65"
+  },
+  {
+    "position": 4,
+    "athlete": "JEANMONNOT Lou",
+    "country": "FRA",
+    "time": "+31.3",
+    "misses": "2",
+    "points": "55"
+  },
+  {
+    "position": 5,
+    "athlete": "OEBERG Hanna",
+    "country": "SWE",
+    "time": "+34.3",
+    "misses": "3",
+    "points": "50"
+  },
+  {
+    "position": 6,
+    "athlete": "CLOETENS Maya",
+    "country": "BEL",
+    "time": "+37.7",
+    "misses": "1",
+    "points": "45"
+  },
+  {
+    "position": 7,
+    "athlete": "BASERGA Amy",
+    "country": "SUI",
+    "time": "+47.5",
+    "misses": "2",
+    "points": "41"
+  },
+  {
+    "position": 8,
+    "athlete": "OEBERG Elvira",
+    "country": "SWE",
+    "time": "+51.6",
+    "misses": "3",
+    "points": "37"
+  },
+  {
+    "position": 9,
+    "athlete": "MAGNUSSON Anna",
+    "country": "SWE",
+    "time": "+1:01.8",
+    "misses": "2",
+    "points": "34"
+  },
+  {
+    "position": 10,
+    "athlete": "VITTOZZI Lisa",
+    "country": "ITA",
+    "time": "+1:02.8",
+    "misses": "3",
+    "points": "31"
+  },
+  {
+    "position": 11,
+    "athlete": "TANDREVOLD Ingrid Landmark",
+    "country": "NOR",
+    "time": "+1:34.8",
+    "misses": "3",
+    "points": "30"
+  },
+  {
+    "position": 12,
+    "athlete": "KIRKEEIDE Maren",
+    "country": "NOR",
+    "time": "+1:36.8",
+    "misses": "3",
+    "points": "29"
+  },
+  {
+    "position": 13,
+    "athlete": "RICHARD Jeanne",
+    "country": "FRA",
+    "time": "+1:40.2",
+    "misses": "3",
+    "points": "28"
+  },
+  {
+    "position": 14,
+    "athlete": "KNOTTEN Karoline Offigstad",
+    "country": "NOR",
+    "time": "+1:56.9",
+    "misses": "3",
+    "points": "27"
+  },
+  {
+    "position": 15,
+    "athlete": "MINKKINEN Suvi",
+    "country": "FIN",
+    "time": "+2:13.1",
+    "misses": "4",
+    "points": "26"
+  },
+  {
+    "position": 16,
+    "athlete": "REPINC Lena",
+    "country": "SLO",
+    "time": "+2:15.7",
+    "misses": "2",
+    "points": "25"
+  },
+  {
+    "position": 17,
+    "athlete": "HETTICH-WALZ Janina",
+    "country": "GER",
+    "time": "+2:22.9",
+    "misses": "4",
+    "points": "24"
+  },
+  {
+    "position": 18,
+    "athlete": "LIE Lotte",
+    "country": "BEL",
+    "time": "+2:31.2",
+    "misses": "3",
+    "points": "23"
+  },
+  {
+    "position": 19,
+    "athlete": "GANDLER Anna",
+    "country": "AUT",
+    "time": "+2:31.3",
+    "misses": "3",
+    "points": "22"
+  },
+  {
+    "position": 20,
+    "athlete": "KLEMENCIC Polona",
+    "country": "SLO",
+    "time": "+2:33.7",
+    "misses": "4",
+    "points": "21"
+  },
+  {
+    "position": 21,
+    "athlete": "ZDOUC Dunja",
+    "country": "AUT",
+    "time": "+2:34.7",
+    "misses": "2",
+    "points": "20"
+  },
+  {
+    "position": 22,
+    "athlete": "CARRARA Michela",
+    "country": "ITA",
+    "time": "+2:36.1",
+    "misses": "5",
+    "points": "19"
+  },
+  {
+    "position": 23,
+    "athlete": "HRISTOVA Lora",
+    "country": "BUL",
+    "time": "+2:38.5",
+    "misses": "2",
+    "points": "18"
+  },
+  {
+    "position": 24,
+    "athlete": "VOBORNIKOVA Tereza",
+    "country": "CZE",
+    "time": "+2:53.7",
+    "misses": "3",
+    "points": "17"
+  },
+  {
+    "position": 25,
+    "athlete": "MICHELON Oceane",
+    "country": "FRA",
+    "time": "+2:55.4",
+    "misses": "4",
+    "points": "16"
+  },
+  {
+    "position": 26,
+    "athlete": "LEHTONEN Venla",
+    "country": "FIN",
+    "time": "+2:55.6",
+    "misses": "3",
+    "points": "15"
+  },
+  {
+    "position": 27,
+    "athlete": "MAKA Anna",
+    "country": "POL",
+    "time": "+2:56.9",
+    "misses": "2",
+    "points": "14"
+  },
+  {
+    "position": 28,
+    "athlete": "VOLFA Estere",
+    "country": "LAT",
+    "time": "+2:57.3",
+    "misses": "3",
+    "points": "13"
+  },
+  {
+    "position": 29,
+    "athlete": "PREUSS Franziska",
+    "country": "GER",
+    "time": "+3:09.1",
+    "misses": "4",
+    "points": "12"
+  },
+  {
+    "position": 30,
+    "athlete": "HAMALAINEN Inka",
+    "country": "FIN",
+    "time": "+3:22.3",
+    "misses": "3",
+    "points": "11"
+  },
+  {
+    "position": 31,
+    "athlete": "DIMITROVA Valentina",
+    "country": "BUL",
+    "time": "+3:29.7",
+    "misses": "2",
+    "points": "10"
+  },
+  {
+    "position": 32,
+    "athlete": "JUPPE Anna",
+    "country": "AUT",
+    "time": "+3:32.1",
+    "misses": "5",
+    "points": "9"
+  },
+  {
+    "position": 33,
+    "athlete": "SIDOROWICZ Natalia",
+    "country": "POL",
+    "time": "+3:37.7",
+    "misses": "4",
+    "points": "8"
+  },
+  {
+    "position": 34,
+    "athlete": "TOMINGAS Tuuli",
+    "country": "EST",
+    "time": "+3:44.1",
+    "misses": "2",
+    "points": "7"
+  },
+  {
+    "position": 35,
+    "athlete": "KERANEN Noora Kaisa",
+    "country": "FIN",
+    "time": "+3:48.5",
+    "misses": "3",
+    "points": "6"
+  },
+  {
+    "position": 36,
+    "athlete": "HALVARSSON Ella",
+    "country": "SWE",
+    "time": "+3:50.2",
+    "misses": "3",
+    "points": "5"
+  },
+  {
+    "position": 37,
+    "athlete": "ANDEXER Anna",
+    "country": "AUT",
+    "time": "+3:57.9",
+    "misses": "4",
+    "points": "4"
+  },
+  {
+    "position": 38,
+    "athlete": "MENGIN Amandine",
+    "country": "FRA",
+    "time": "+4:02.8",
+    "misses": "2",
+    "points": "3"
+  },
+  {
+    "position": 39,
+    "athlete": "VOIGT Vanessa",
+    "country": "GER",
+    "time": "+4:04.0",
+    "misses": "3",
+    "points": "2"
+  },
+  {
+    "position": 40,
+    "athlete": "GASPARIN Aita",
+    "country": "SUI",
+    "time": "+4:16.9",
+    "misses": "4",
+    "points": "1"
+  }
+]

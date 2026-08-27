@@ -1,30 +1,32 @@
 import 'dotenv/config';
 import { PrismaPg } from '@prisma/adapter-pg';
-import { PrismaClient, GenderId } from '../generated/client';
-import athletesData from '../data/athletes.json';
+import { PrismaClient, Athlete } from '../generated/client';
+import resultData from '../data/results.json';
 
 const adapter = new PrismaPg({
   connectionString: process.env.DATABASE_URL,
 });
 const prisma = new PrismaClient({ adapter });
 
-async function importAthletes() {
+async function importResults() {
   console.log('Початок заповнення БД...');
 
-  for (const athlete of athletesData) {
-    await prisma.athlete.create({
+  for (const result of resultData) {
+    await prisma.result.create({
       data: {
-        firstName: athlete.firstName,
-        lastName: athlete.lastName,
-        country: athlete.country,
-        genderId: athlete.genderId as GenderId,
+        position: result.position,
+        athlete: result.athlete,
+        country: result.country,
+        time: result.time,
+        misses: result.misses,
+        points: +result.points,
       },
     });
   }
   console.log('БД успішно заповнена!');
 }
 
-importAthletes()
+importResults()
   .catch((e) => {
     console.error('Помилка при заповненні БД:', e);
     process.exit(1);

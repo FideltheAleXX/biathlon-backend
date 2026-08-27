@@ -44,7 +44,7 @@ async function main() {
         endDate: new Date(stage.end_date),
         race: {
           create: stage.race.map((race) => ({
-            id: String(race.id),
+            id: race.id,
             date: new Date(race.date),
             discipline: disciplineMap[race.discipline],
             gender: genderMap[race.gender],
