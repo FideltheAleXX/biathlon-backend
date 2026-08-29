@@ -20,6 +20,7 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "prisma:seed": "tsx prisma/seeds/stages-seed.ts",
+    "prisma:seed:result": "tsx prisma/seeds/result-seed.ts",
     "prisma:seed:reset": "prisma migrate reset && npm run prisma:seed",
     "prisma:seed:athletes": "tsx prisma/seeds/athletes-seed.ts"
   },

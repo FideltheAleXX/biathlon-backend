@@ -8,14 +8,25 @@ const adapter = new PrismaPg({
 });
 const prisma = new PrismaClient({ adapter });
 
+const RACE_ID = 'wc-2526-105';
+
 async function importResults() {
   console.log('Початок заповнення БД...');
 
   for (const result of resultData) {
+    const athlete = await prisma.athlete.findUnique({
+      where: {
+        firstName_lastName: {
+          firstName: result.firstName,
+          lastName: result.lastName,
+        },
+      },
+    });
     await prisma.result.create({
       data: {
+        raceId: RACE_ID,
+        athleteId: athlete!.id,
         position: result.position,
-        athlete: result.athlete,
         country: result.country,
         time: result.time,
         misses: result.misses,
