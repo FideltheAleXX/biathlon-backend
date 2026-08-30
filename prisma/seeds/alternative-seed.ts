@@ -1,7 +1,8 @@
 import 'dotenv/config';
 import { PrismaPg } from '@prisma/adapter-pg';
-import { PrismaClient, Athlete } from '../generated/client';
-import resultData from '../data/results.json';
+import { PrismaClient } from '../generated/client';
+
+import result906 from '../data/result906.json';
 
 const adapter = new PrismaPg({
   connectionString: process.env.DATABASE_URL,
@@ -18,9 +19,7 @@ interface PreparedResults {
   points: number;
 }
 
-const RACE_ID = 'wc-2526-105';
-
-async function importResults() {
+async function importResults(raceId: string, resultData: any) {
   const athletes = await prisma.athlete.findMany({
     select: { id: true, firstName: true, lastName: true },
   });
@@ -43,7 +42,7 @@ async function importResults() {
     }
 
     preparedResults.push({
-      raceId: RACE_ID,
+      raceId,
       athleteId: athleteId,
       country: result.country,
       position: result.position,
@@ -61,11 +60,12 @@ async function importResults() {
   console.log('БД заповнена!');
 }
 
-importResults()
-  .catch((e) => {
-    console.error('Помилка при заповненні БД:', e);
-    process.exit(1);
-  })
-  .finally(async () => {
-    await prisma.$disconnect();
-  });
+importResults('wc-2526-906', result906);
+
+// .catch((e) => {
+//   console.error('Помилка при заповненні БД:', e);
+//   process.exit(1);
+// })
+// .finally(async () => {
+//   await prisma.$disconnect();
+// });

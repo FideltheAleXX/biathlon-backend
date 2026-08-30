@@ -1,0 +1,272 @@
+[
+  {
+    "position": 1,
+    "firstName": "Johan-Olav Smoerdal",
+    "lastName": "BOTN",
+    "country": "NOR",
+    "time": "37:15.6",
+    "misses": "0",
+    "points": "90"
+  },
+  {
+    "position": 2,
+    "firstName": "Philipp",
+    "lastName": "NAWRATH",
+    "country": "GER",
+    "time": "+3.7",
+    "misses": "0",
+    "points": "75"
+  },
+  {
+    "position": 3,
+    "firstName": "Eric",
+    "lastName": "PERROT",
+    "country": "FRA",
+    "time": "+13.7",
+    "misses": "2",
+    "points": "65"
+  },
+  {
+    "position": 4,
+    "firstName": "Sturla Holm",
+    "lastName": "LAEGREID",
+    "country": "NOR",
+    "time": "+20.6",
+    "misses": "1",
+    "points": "55"
+  },
+  {
+    "position": 5,
+    "firstName": "Emilien",
+    "lastName": "JACQUELIN",
+    "country": "FRA",
+    "time": "+23.9",
+    "misses": "3",
+    "points": "50"
+  },
+  {
+    "position": 6,
+    "firstName": "Martin",
+    "lastName": "PONSILUOMA",
+    "country": "SWE",
+    "time": "+26.5",
+    "misses": "3",
+    "points": "45"
+  },
+  {
+    "position": 7,
+    "firstName": "Oscar",
+    "lastName": "LOMBARDOT",
+    "country": "FRA",
+    "time": "+50.9",
+    "misses": "1",
+    "points": "41"
+  },
+  {
+    "position": 8,
+    "firstName": "Fabien",
+    "lastName": "CLAUDE",
+    "country": "FRA",
+    "time": "+1:09.4",
+    "misses": "2",
+    "points": "37"
+  },
+  {
+    "position": 9,
+    "firstName": "Sebastian",
+    "lastName": "SAMUELSSON",
+    "country": "SWE",
+    "time": "+1:35.1",
+    "misses": "3",
+    "points": "34"
+  },
+  {
+    "position": 10,
+    "firstName": "Vetle Sjaastad",
+    "lastName": "CHRISTIANSEN",
+    "country": "NOR",
+    "time": "+1:36.5",
+    "misses": "4",
+    "points": "31"
+  },
+  {
+    "position": 11,
+    "firstName": "Sverre Dahlen",
+    "lastName": "ASPENES",
+    "country": "NOR",
+    "time": "+1:36.6",
+    "misses": "4",
+    "points": "30"
+  },
+  {
+    "position": 12,
+    "firstName": "Campbell",
+    "lastName": "WRIGHT",
+    "country": "USA",
+    "time": "+1:42.2",
+    "misses": "4",
+    "points": "29"
+  },
+  {
+    "position": 13,
+    "firstName": "Johannes",
+    "lastName": "DALE-SKJEVDAL",
+    "country": "NOR",
+    "time": "+1:48.8",
+    "misses": "4",
+    "points": "28"
+  },
+  {
+    "position": 14,
+    "firstName": "Quentin",
+    "lastName": "FILLON MAILLET",
+    "country": "FRA",
+    "time": "+1:51.9",
+    "misses": "4",
+    "points": "27"
+  },
+  {
+    "position": 15,
+    "firstName": "Justus",
+    "lastName": "STRELOW",
+    "country": "GER",
+    "time": "+1:55.8",
+    "misses": "1",
+    "points": "26"
+  },
+  {
+    "position": 16,
+    "firstName": "Isak Leknes",
+    "lastName": "FREY",
+    "country": "NOR",
+    "time": "+1:57.6",
+    "misses": "4",
+    "points": "25"
+  },
+  {
+    "position": 17,
+    "firstName": "Martin",
+    "lastName": "ULDAL",
+    "country": "NOR",
+    "time": "+1:58.2",
+    "misses": "4",
+    "points": "24"
+  },
+  {
+    "position": 18,
+    "firstName": "Lukas",
+    "lastName": "HOFER",
+    "country": "ITA",
+    "time": "+2:15.5",
+    "misses": "4",
+    "points": "23"
+  },
+  {
+    "position": 19,
+    "firstName": "Vitezslav",
+    "lastName": "HORNIG",
+    "country": "CZE",
+    "time": "+2:19.7",
+    "misses": "3",
+    "points": "22"
+  },
+  {
+    "position": 20,
+    "firstName": "Niklas",
+    "lastName": "HARTWEG",
+    "country": "SUI",
+    "time": "+2:19.8",
+    "misses": "3",
+    "points": "21"
+  },
+  {
+    "position": 21,
+    "firstName": "Philipp",
+    "lastName": "HORN",
+    "country": "GER",
+    "time": "+2:20.0",
+    "misses": "4",
+    "points": "20"
+  },
+  {
+    "position": 22,
+    "firstName": "Vitalii",
+    "lastName": "MANDZYN",
+    "country": "UKR",
+    "time": "+2:23.7",
+    "misses": "3",
+    "points": "18"
+  },
+  {
+    "position": 23,
+    "firstName": "Rihards",
+    "lastName": "LOZBERS",
+    "country": "LAT",
+    "time": "+2:25.2",
+    "misses": "3",
+    "points": "16"
+  },
+  {
+    "position": 24,
+    "firstName": "Didier",
+    "lastName": "BIONAZ",
+    "country": "ITA",
+    "time": "+2:42.1",
+    "misses": "4",
+    "points": "14"
+  },
+  {
+    "position": 25,
+    "firstName": "Michal",
+    "lastName": "KRCMAR",
+    "country": "CZE",
+    "time": "+3:18.7",
+    "misses": "4",
+    "points": "12"
+  },
+  {
+    "position": 26,
+    "firstName": "Gaetan",
+    "lastName": "PATUREL",
+    "country": "FRA",
+    "time": "+3:25.0",
+    "misses": "7",
+    "points": "10"
+  },
+  {
+    "position": 27,
+    "firstName": "Joscha",
+    "lastName": "BURKHALTER",
+    "country": "SUI",
+    "time": "+4:21.5",
+    "misses": "1",
+    "points": "8"
+  },
+  {
+    "position": 28,
+    "firstName": "Mikulas",
+    "lastName": "KARLIK",
+    "country": "CZE",
+    "time": "+4:27.1",
+    "misses": "6",
+    "points": "6"
+  },
+  {
+    "position": 29,
+    "firstName": "Jesper",
+    "lastName": "NELIN",
+    "country": "SWE",
+    "time": "+4:36.5",
+    "misses": "5",
+    "points": "4"
+  },
+  {
+    "position": 30,
+    "firstName": "Tero",
+    "lastName": "SEPPALA",
+    "country": "FIN",
+    "time": "+4:44.6",
+    "misses": "5",
+    "points": "2"
+  }
+]
