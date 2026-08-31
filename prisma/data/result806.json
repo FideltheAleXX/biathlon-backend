@@ -1,0 +1,889 @@
+[
+  {
+    "position": 1,
+    "firstName": "Viktor",
+    "lastName": "BRANDT",
+    "country": "SWE",
+    "leg": 1,
+    "time": "+36.5",
+    "misses": "0+5"
+  },
+  {
+    "position": 1,
+    "firstName": "Martin",
+    "lastName": "PONSILUOMA",
+    "country": "SWE",
+    "leg": 2,
+    "time": "+1:11.5",
+    "misses": "1+5"
+  },
+  {
+    "position": 1,
+    "firstName": "Anna-Karin",
+    "lastName": "HEIJDENBERG",
+    "country": "SWE",
+    "leg": 3,
+    "time": "+57.0",
+    "misses": "0+2"
+  },
+  {
+    "position": 1,
+    "firstName": "Elvira",
+    "lastName": "OEBERG",
+    "country": "SWE",
+    "leg": 4,
+    "time": "1:16:32.0",
+    "misses": "0+2"
+  },
+
+  {
+    "position": 2,
+    "firstName": "Sebastian",
+    "lastName": "STALDER",
+    "country": "SUI",
+    "leg": 1,
+    "time": "+0.6",
+    "misses": "0+1"
+  },
+  {
+    "position": 2,
+    "firstName": "Joscha",
+    "lastName": "BURKHALTER",
+    "country": "SUI",
+    "leg": 2,
+    "time": "+39.2",
+    "misses": "0+0"
+  },
+  {
+    "position": 2,
+    "firstName": "Aita",
+    "lastName": "GASPARIN",
+    "country": "SUI",
+    "leg": 3,
+    "time": "+1:04.3",
+    "misses": "0+0"
+  },
+  {
+    "position": 2,
+    "firstName": "Lena",
+    "lastName": "HAECKI-GROSS",
+    "country": "SUI",
+    "leg": 4,
+    "time": "+28.6",
+    "misses": "0+5"
+  },
+
+  {
+    "position": 3,
+    "firstName": "Maxime",
+    "lastName": "GERMAIN",
+    "country": "USA",
+    "leg": 1,
+    "time": "17:08.0",
+    "misses": "0+4"
+  },
+  {
+    "position": 3,
+    "firstName": "Campbell",
+    "lastName": "WRIGHT",
+    "country": "USA",
+    "leg": 2,
+    "time": "34:27.7",
+    "misses": "0+3"
+  },
+  {
+    "position": 3,
+    "firstName": "Deedra",
+    "lastName": "IRWIN",
+    "country": "USA",
+    "leg": 3,
+    "time": "55:09.0",
+    "misses": "0+1"
+  },
+  {
+    "position": 3,
+    "firstName": "Margie",
+    "lastName": "FREED",
+    "country": "USA",
+    "leg": 4,
+    "time": "+34.6",
+    "misses": "0+6"
+  },
+
+  {
+    "position": 4,
+    "firstName": "Martin",
+    "lastName": "MATKO",
+    "country": "SVK",
+    "leg": 1,
+    "time": "+36.2",
+    "misses": "0+3"
+  },
+  {
+    "position": 4,
+    "firstName": "Jakub",
+    "lastName": "BORGULA",
+    "country": "SVK",
+    "leg": 2,
+    "time": "+1:21.0",
+    "misses": "1+3"
+  },
+  {
+    "position": 4,
+    "firstName": "Anastasiya",
+    "lastName": "KUZMINA",
+    "country": "SVK",
+    "leg": 3,
+    "time": "+1:38.6",
+    "misses": "1+3"
+  },
+  {
+    "position": 4,
+    "firstName": "Paulina",
+    "lastName": "BATOVSKA FIALKOVA",
+    "country": "SVK",
+    "leg": 4,
+    "time": "+52.0",
+    "misses": "0+1"
+  },
+
+  {
+    "position": 5,
+    "firstName": "Philipp",
+    "lastName": "NAWRATH",
+    "country": "GER",
+    "leg": 1,
+    "time": "+8.8",
+    "misses": "0+6"
+  },
+  {
+    "position": 5,
+    "firstName": "Philipp",
+    "lastName": "HORN",
+    "country": "GER",
+    "leg": 2,
+    "time": "+2:24.4",
+    "misses": "3+6"
+  },
+  {
+    "position": 5,
+    "firstName": "Selina",
+    "lastName": "GROTIAN",
+    "country": "GER",
+    "leg": 3,
+    "time": "+1:34.3",
+    "misses": "0+2"
+  },
+  {
+    "position": 5,
+    "firstName": "Julia",
+    "lastName": "TANNHEIMER",
+    "country": "GER",
+    "leg": 4,
+    "time": "+1:11.7",
+    "misses": "1+4"
+  },
+
+  {
+    "position": 6,
+    "firstName": "Johannes",
+    "lastName": "DALE-SKJEVDAL",
+    "country": "NOR",
+    "leg": 1,
+    "time": "+1:04.9",
+    "misses": "2+5"
+  },
+  {
+    "position": 6,
+    "firstName": "Johan-Olav Smoerdal",
+    "lastName": "BOTN",
+    "country": "NOR",
+    "leg": 2,
+    "time": "+1:43.7",
+    "misses": "1+6"
+  },
+  {
+    "position": 6,
+    "firstName": "Ingrid Landmark",
+    "lastName": "TANDREVOLD",
+    "country": "NOR",
+    "leg": 3,
+    "time": "+40.0",
+    "misses": "0+4"
+  },
+  {
+    "position": 6,
+    "firstName": "Maren",
+    "lastName": "KIRKEEIDE",
+    "country": "NOR",
+    "leg": 4,
+    "time": "+1:18.8",
+    "misses": "2+4"
+  },
+
+  {
+    "position": 7,
+    "firstName": "Tomas",
+    "lastName": "MIKYSKA",
+    "country": "CZE",
+    "leg": 1,
+    "time": "+13.7",
+    "misses": "0+1"
+  },
+  {
+    "position": 7,
+    "firstName": "Mikulas",
+    "lastName": "KARLIK",
+    "country": "CZE",
+    "leg": 2,
+    "time": "+1:53.1",
+    "misses": "2+6"
+  },
+  {
+    "position": 7,
+    "firstName": "Jessica",
+    "lastName": "JISLOVA",
+    "country": "CZE",
+    "leg": 3,
+    "time": "+1:48.5",
+    "misses": "0+3"
+  },
+  {
+    "position": 7,
+    "firstName": "Tereza",
+    "lastName": "VINKLARKOVA",
+    "country": "CZE",
+    "leg": 4,
+    "time": "+1:23.9",
+    "misses": "0+4"
+  },
+
+  {
+    "position": 8,
+    "firstName": "Oscar",
+    "lastName": "LOMBARDOT",
+    "country": "FRA",
+    "leg": 1,
+    "time": "+1:42.3",
+    "misses": "1+6"
+  },
+  {
+    "position": 8,
+    "firstName": "Fabien",
+    "lastName": "CLAUDE",
+    "country": "FRA",
+    "leg": 2,
+    "time": "+1:28.2",
+    "misses": "0+0"
+  },
+  {
+    "position": 8,
+    "firstName": "Justine",
+    "lastName": "BRAISAZ-BOUCHET",
+    "country": "FRA",
+    "leg": 3,
+    "time": "+1:13.6",
+    "misses": "1+3"
+  },
+  {
+    "position": 8,
+    "firstName": "Oceane",
+    "lastName": "MICHELON",
+    "country": "FRA",
+    "leg": 4,
+    "time": "+2:00.5",
+    "misses": "2+6"
+  },
+
+  {
+    "position": 9,
+    "firstName": "Florent",
+    "lastName": "CLAUDE",
+    "country": "BEL",
+    "leg": 1,
+    "time": "+34.8",
+    "misses": "0+3"
+  },
+  {
+    "position": 9,
+    "firstName": "Thierry",
+    "lastName": "LANGER",
+    "country": "BEL",
+    "leg": 2,
+    "time": "+1:01.3",
+    "misses": "0+1"
+  },
+  {
+    "position": 9,
+    "firstName": "Lotte",
+    "lastName": "LIE",
+    "country": "BEL",
+    "leg": 3,
+    "time": "+2:12.7",
+    "misses": "0+5"
+  },
+  {
+    "position": 9,
+    "firstName": "Maya",
+    "lastName": "CLOETENS",
+    "country": "BEL",
+    "leg": 4,
+    "time": "+2:11.9",
+    "misses": "0+4"
+  },
+
+  {
+    "position": 10,
+    "firstName": "Dmytro",
+    "lastName": "PIDRUCHNYI",
+    "country": "UKR",
+    "leg": 1,
+    "time": "+1:41.9",
+    "misses": "2+5"
+  },
+  {
+    "position": 10,
+    "firstName": "Vitalii",
+    "lastName": "MANDZYN",
+    "country": "UKR",
+    "leg": 2,
+    "time": "+2:30.8",
+    "misses": "1+3"
+  },
+  {
+    "position": 10,
+    "firstName": "Khrystyna",
+    "lastName": "DMYTRENKO",
+    "country": "UKR",
+    "leg": 3,
+    "time": "+2:38.4",
+    "misses": "0+3"
+  },
+  {
+    "position": 10,
+    "firstName": "Daryna",
+    "lastName": "CHALYK",
+    "country": "UKR",
+    "leg": 4,
+    "time": "+2:19.2",
+    "misses": "0+1"
+  },
+
+  {
+    "position": 11,
+    "firstName": "Rene",
+    "lastName": "ZAHKNA",
+    "country": "EST",
+    "leg": 1,
+    "time": "+35.8",
+    "misses": "1+3"
+  },
+  {
+    "position": 11,
+    "firstName": "Kristo",
+    "lastName": "SIIMER",
+    "country": "EST",
+    "leg": 2,
+    "time": "+1:10.1",
+    "misses": "1+3"
+  },
+  {
+    "position": 11,
+    "firstName": "Regina",
+    "lastName": "ERMITS",
+    "country": "EST",
+    "leg": 3,
+    "time": "+2:20.9",
+    "misses": "1+6"
+  },
+  {
+    "position": 11,
+    "firstName": "Susan",
+    "lastName": "KUELM",
+    "country": "EST",
+    "leg": 4,
+    "time": "+2:38.1",
+    "misses": "1+4"
+  },
+
+  {
+    "position": 12,
+    "firstName": "Anton",
+    "lastName": "VIDMAR",
+    "country": "SLO",
+    "leg": 1,
+    "time": "+31.0",
+    "misses": "0+3"
+  },
+  {
+    "position": 12,
+    "firstName": "Lovro",
+    "lastName": "PLANKO",
+    "country": "SLO",
+    "leg": 2,
+    "time": "+2:24.9",
+    "misses": "0+6"
+  },
+  {
+    "position": 12,
+    "firstName": "Lena",
+    "lastName": "REPINC",
+    "country": "SLO",
+    "leg": 3,
+    "time": "+2:40.9",
+    "misses": "0+3"
+  },
+  {
+    "position": 12,
+    "firstName": "Anamarija",
+    "lastName": "LAMPIC",
+    "country": "SLO",
+    "leg": 4,
+    "time": "+2:48.1",
+    "misses": "1+5"
+  },
+
+  {
+    "position": 13,
+    "firstName": "Adam",
+    "lastName": "RUNNALLS",
+    "country": "CAN",
+    "leg": 1,
+    "time": "+32.7",
+    "misses": "0+1"
+  },
+  {
+    "position": 13,
+    "firstName": "Zachary",
+    "lastName": "CONNELLY",
+    "country": "CAN",
+    "leg": 2,
+    "time": "+3:13.6",
+    "misses": "3+4"
+  },
+  {
+    "position": 13,
+    "firstName": "Nadia",
+    "lastName": "MOSER",
+    "country": "CAN",
+    "leg": 3,
+    "time": "+3:26.0",
+    "misses": "0+2"
+  },
+  {
+    "position": 13,
+    "firstName": "Pascale",
+    "lastName": "PARADIS",
+    "country": "CAN",
+    "leg": 4,
+    "time": "+2:55.7",
+    "misses": "0+2"
+  },
+
+  {
+    "position": 14,
+    "firstName": "Olli",
+    "lastName": "HIIDENSALO",
+    "country": "FIN",
+    "leg": 1,
+    "time": "+8.3",
+    "misses": "0+2"
+  },
+  {
+    "position": 14,
+    "firstName": "Arttu",
+    "lastName": "HEIKKINEN",
+    "country": "FIN",
+    "leg": 2,
+    "time": "+1:44.0",
+    "misses": "2+6"
+  },
+  {
+    "position": 14,
+    "firstName": "Inka",
+    "lastName": "HAMALAINEN",
+    "country": "FIN",
+    "leg": 3,
+    "time": "+1:54.5",
+    "misses": "0+4"
+  },
+  {
+    "position": 14,
+    "firstName": "Venla",
+    "lastName": "LEHTONEN",
+    "country": "FIN",
+    "leg": 4,
+    "time": "+3:13.7",
+    "misses": "2+4"
+  },
+
+  {
+    "position": 15,
+    "firstName": "Dominic",
+    "lastName": "UNTERWEGER",
+    "country": "AUT",
+    "leg": 1,
+    "time": "+39.4",
+    "misses": "0+4"
+  },
+  {
+    "position": 15,
+    "firstName": "Patrick",
+    "lastName": "JAKOB",
+    "country": "AUT",
+    "leg": 2,
+    "time": "+1:53.9",
+    "misses": "0+5"
+  },
+  {
+    "position": 15,
+    "firstName": "Anna",
+    "lastName": "GANDLER",
+    "country": "AUT",
+    "leg": 3,
+    "time": "+2:42.2",
+    "misses": "2+5"
+  },
+  {
+    "position": 15,
+    "firstName": "Anna",
+    "lastName": "ANDEXER",
+    "country": "AUT",
+    "leg": 4,
+    "time": "+3:47.1",
+    "misses": "2+4"
+  },
+
+  {
+    "position": 16,
+    "firstName": "Konrad",
+    "lastName": "BADACZ",
+    "country": "POL",
+    "leg": 1,
+    "time": "+44.3",
+    "misses": "1+3"
+  },
+  {
+    "position": 16,
+    "firstName": "Marcin",
+    "lastName": "ZAWOL",
+    "country": "POL",
+    "leg": 2,
+    "time": "+2:40.9",
+    "misses": "1+4"
+  },
+  {
+    "position": 16,
+    "firstName": "Kamila",
+    "lastName": "ZUK",
+    "country": "POL",
+    "leg": 3,
+    "time": "+2:24.7",
+    "misses": "1+3"
+  },
+  {
+    "position": 16,
+    "firstName": "Natalia",
+    "lastName": "SIDOROWICZ",
+    "country": "POL",
+    "leg": 4,
+    "time": "+3:53.2",
+    "misses": "2+6"
+  },
+
+  {
+    "position": 17,
+    "firstName": "Patrick",
+    "lastName": "BRAUNHOFER",
+    "country": "ITA",
+    "leg": 1,
+    "time": "+11.4",
+    "misses": "0+2"
+  },
+  {
+    "position": 17,
+    "firstName": "Christoph",
+    "lastName": "PIRCHER",
+    "country": "ITA",
+    "leg": 2,
+    "time": "+2:09.1",
+    "misses": "2+6"
+  },
+  {
+    "position": 17,
+    "firstName": "Michela",
+    "lastName": "CARRARA",
+    "country": "ITA",
+    "leg": 3,
+    "time": "+3:06.2",
+    "misses": "2+5"
+  },
+  {
+    "position": 17,
+    "firstName": "Hannah",
+    "lastName": "AUCHENTALLER",
+    "country": "ITA",
+    "leg": 4,
+    "time": "+3:53.4",
+    "misses": "1+5"
+  },
+
+  {
+    "position": 18,
+    "firstName": "George",
+    "lastName": "BUTA",
+    "country": "ROU",
+    "leg": 1,
+    "time": "+33.6",
+    "misses": "0+1"
+  },
+  {
+    "position": 18,
+    "firstName": "George",
+    "lastName": "COLTEA",
+    "country": "ROU",
+    "leg": 2,
+    "time": "+2:01.4",
+    "misses": "1+4"
+  },
+  {
+    "position": 18,
+    "firstName": "Andreea",
+    "lastName": "MEZDREA",
+    "country": "ROU",
+    "leg": 3,
+    "time": "+3:01.0",
+    "misses": "0+6"
+  },
+  {
+    "position": 18,
+    "firstName": "Anastasia",
+    "lastName": "TOLMACHEVA",
+    "country": "ROU",
+    "leg": 4,
+    "time": "+4:41.3",
+    "misses": "0+1"
+  },
+
+  {
+    "position": 19,
+    "firstName": "Maksim",
+    "lastName": "MAKAROV",
+    "country": "MDA",
+    "leg": 1,
+    "time": "+1:04.9",
+    "misses": "0+3"
+  },
+  {
+    "position": 19,
+    "firstName": "Mihail",
+    "lastName": "USOV",
+    "country": "MDA",
+    "leg": 2,
+    "time": "+2:51.1",
+    "misses": "0+1"
+  },
+  {
+    "position": 19,
+    "firstName": "Aliona",
+    "lastName": "MAKAROVA",
+    "country": "MDA",
+    "leg": 3,
+    "time": "+5:01.0",
+    "misses": "0+5"
+  },
+  {
+    "position": 19,
+    "firstName": "Alina",
+    "lastName": "STREMOUS",
+    "country": "MDA",
+    "leg": 4,
+    "time": "+5:13.6",
+    "misses": "0+4"
+  },
+
+  {
+    "position": 20,
+    "firstName": "Andrejs",
+    "lastName": "RASTORGUJEVS",
+    "country": "LAT",
+    "leg": 1,
+    "time": "+35.2",
+    "misses": "1+3"
+  },
+  {
+    "position": 20,
+    "firstName": "Renars",
+    "lastName": "BIRKENTALS",
+    "country": "LAT",
+    "leg": 2,
+    "time": "+3:04.9",
+    "misses": "3+5"
+  },
+  {
+    "position": 20,
+    "firstName": "Baiba",
+    "lastName": "BENDIKA",
+    "country": "LAT",
+    "leg": 3,
+    "time": "+4:59.7",
+    "misses": "2+6"
+  },
+  {
+    "position": 20,
+    "firstName": "Estere",
+    "lastName": "VOLFA",
+    "country": "LAT",
+    "leg": 4,
+    "time": "+5:31.7",
+    "misses": "0+3"
+  },
+
+  {
+    "position": 21,
+    "firstName": "Karol",
+    "lastName": "DOMBROVSKI",
+    "country": "LTU",
+    "leg": 1,
+    "time": "+2:09.5",
+    "misses": "1+5"
+  },
+  {
+    "position": 21,
+    "firstName": "Vytautas",
+    "lastName": "STROLIA",
+    "country": "LTU",
+    "leg": 2,
+    "time": "+3:31.6",
+    "misses": "2+4"
+  },
+  {
+    "position": 21,
+    "firstName": "Lidija",
+    "lastName": "BARAUSKIENE",
+    "country": "LTU",
+    "leg": 3,
+    "time": "+4:30.1",
+    "misses": "0+3"
+  },
+  {
+    "position": 21,
+    "firstName": "Natalja",
+    "lastName": "KOCERGINA",
+    "country": "LTU",
+    "leg": 4,
+    "time": "+6:29.8",
+    "misses": "1+4"
+  },
+
+  {
+    "position": 22,
+    "firstName": "Konstantin",
+    "lastName": "VASILEV",
+    "country": "BUL",
+    "leg": 1,
+    "time": "+4:07.1",
+    "misses": "5+6"
+  },
+  {
+    "position": 22,
+    "firstName": "Vladimir",
+    "lastName": "ILIEV",
+    "country": "BUL",
+    "leg": 2,
+    "time": "+5:28.5",
+    "misses": "2+4"
+  },
+  {
+    "position": 22,
+    "firstName": "Lora",
+    "lastName": "HRISTOVA",
+    "country": "BUL",
+    "leg": 3,
+    "time": "Lapped",
+    "misses": "0+3"
+  },
+  {
+    "position": 22,
+    "firstName": "Maria",
+    "lastName": "ZDRAVKOVA",
+    "country": "BUL",
+    "leg": 4,
+    "time": "Lapped",
+    "misses": ""
+  },
+
+  {
+    "position": 23,
+    "firstName": "Vadim",
+    "lastName": "KURALES",
+    "country": "KAZ",
+    "leg": 1,
+    "time": "+3:49.1",
+    "misses": "1+5"
+  },
+  {
+    "position": 23,
+    "firstName": "Alexandr",
+    "lastName": "MUKHIN",
+    "country": "KAZ",
+    "leg": 2,
+    "time": "Lapped",
+    "misses": "2+6"
+  },
+  {
+    "position": 23,
+    "firstName": "Milana",
+    "lastName": "GENEVA",
+    "country": "KAZ",
+    "leg": 3,
+    "time": "Lapped",
+    "misses": ""
+  },
+  {
+    "position": 23,
+    "firstName": "Aisha",
+    "lastName": "RAKISHEVA",
+    "country": "KAZ",
+    "leg": 4,
+    "time": "Lapped",
+    "misses": ""
+  },
+
+  {
+    "position": 24,
+    "firstName": "Graham",
+    "lastName": "BENSON",
+    "country": "GBR",
+    "leg": 1,
+    "time": "+4:11.6",
+    "misses": "4+6"
+  },
+  {
+    "position": 24,
+    "firstName": "Matthew",
+    "lastName": "CHRONICLE",
+    "country": "GBR",
+    "leg": 2,
+    "time": "Lapped",
+    "misses": ""
+  },
+  {
+    "position": 24,
+    "firstName": "Chloe",
+    "lastName": "DUPONT",
+    "country": "GBR",
+    "leg": 3,
+    "time": "Lapped",
+    "misses": ""
+  },
+  {
+    "position": 24,
+    "firstName": "Shawna",
+    "lastName": "PENDRY",
+    "country": "GBR",
+    "leg": 4,
+    "time": "Lapped",
+    "misses": ""
+  }
+]
