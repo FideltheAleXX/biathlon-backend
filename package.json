@@ -21,6 +21,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "prisma:seed": "tsx prisma/seeds/stages-seed.ts",
     "prisma:seed:result": "tsx prisma/seeds/result-seed.ts",
+    "prisma:seed:relay": "tsx prisma/seeds/relay-seed.ts",
     "prisma:seed:alternative": "tsx prisma/seeds/alternative-seed.ts",
     "prisma:seed:reset": "prisma migrate reset && npm run prisma:seed",
     "prisma:seed:athletes": "tsx prisma/seeds/athletes-seed.ts"
